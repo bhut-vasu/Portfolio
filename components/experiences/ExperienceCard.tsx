@@ -25,7 +25,7 @@ const Experience = ({
   degree,
   duration,
   webLink,
-  Percentage
+  Percentage,
 }: ExperienceProps) => {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -76,14 +76,14 @@ const Experience = ({
               aria-disabled={webLink === ""}
               tabIndex={webLink === "" ? -1 : undefined}
               className={`grid place-items-center p-3 text-xsm ${
-                webLink === "" && "pointer-events-none bg-violet-400"
+                webLink === "" && "pointer-events-none bg-violet-300"
               } hover:bg-violet-700 rounded-full bg-violet-600 text-white`}
             >
               <FaExternalLinkAlt size={15} />
             </Link>
           </div>
         ) : (
-			<div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between">
             <h3 className="mb-2 font-medium text-lg md:text-xl">{institute}</h3>
             <h2 className={`mt-[5px] font-[100] text-[13px] `}>{Percentage}</h2>
           </div>
