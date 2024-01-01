@@ -14,6 +14,7 @@ const nextConfig = {
       "i.imgur.com",
       "img.freepik.com",
       "media.geeksforgeeks.org",
+      "lottie.host"
     ],
   },
 };
