@@ -27,7 +27,7 @@ export default function Header({ logo }: { logo: string }) {
         // <header className={`backdrop-filter backdrop-blur-lg ${scroll ? 'border-b bg-white bg-opacity-40' : 'border-b-0'} dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
         // <header className={` dark:bg-grey-900 dark:bg-opacity-40 border-gray-200 dark:border-b-0 z-30 2xl:w-4/5 2xl:mx-auto 2xl:mt-5 xl:w-4/5 xl:mx-auto xl:mt-5 min-w-full flex flex-col fixed`}>
         <header className={`z-30 2xl:w-4/5 2xl:mx-auto 2xl:mt-5 xl:w-4/5 xl:mx-auto xl:mt-5 min-w-full flex flex-col fixed`}>
-            <nav className={`lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-4 mx-auto py-5 hidden sm:flex backdrop-filter backdrop-blur-lg ${scroll && theme === 'light' ? 'border bg-opacity-40 shadow-sm' : 'border-0'} ${scroll && theme === 'dark' ? 'border- bg-opacity-40 border-black' : 'border-0'} rounded-lg items-center justify-between`}>
+            <nav className={`lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-4 mx-auto py-5 hidden sm:flex backdrop-filter backdrop-blur-lg ${scroll && theme === 'light' ? 'border bg-opacity-40 bg-slate-100 shadow-md' : 'border-0'} ${scroll && theme === 'dark' ? 'border bg-slate-700 bg-opacity-40 border-black' : 'border-0'} rounded-lg items-center justify-between`}>
 
                 <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 hover:dark:text-violet-500 transition-colors duration-300'>
                     {logo === 'Jigar Sable' ? <FaNodeJs size={28} /> : <span className='text-lg font-medium'>{logo.split(' ')[0]}</span>}
